@@ -1,0 +1,55 @@
+@media screen and (max-width: 800px) {
+ 
+    #contenedor {
+
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    nav {
+
+        background-color: lightblue;
+        width: auto;
+
+    }
+
+    a {
+
+        color: black;
+
+    }
+
+    section {
+
+        background-color: lightgreen;
+        color: black;
+        width: auto;
+        margin: 0;
+
+    }
+
+    aside {
+
+        color: blue;
+        width: auto;
+
+    }
+
+    h1 {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    h2 {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+}
