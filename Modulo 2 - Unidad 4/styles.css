@@ -1,0 +1,37 @@
+body {
+
+    background-color: black;
+
+}
+
+#title_contact {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    padding: 20px 0 0 0;
+
+}
+
+.g-3 {
+
+    color: white;
+
+}
+
+.btn-primary {
+
+    margin: 10px 0 20px 0;
+
+}
+
+.carousel-caption {
+
+    top: 40%;
+    max-height: 20%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+
+}
