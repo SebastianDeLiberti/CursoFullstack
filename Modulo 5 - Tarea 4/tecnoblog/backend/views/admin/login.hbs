@@ -1,0 +1,39 @@
+<div id="login_container">
+
+    <h2>Bienvenido</h2>
+
+    <form id="login_form" action="/admin/login" method="post">
+
+        <div class="line_container">
+
+                <label for="usuario"><i class="fa-solid fa-user"></i>  Usuario</label>
+                <input type="text" name="usuario"></input>
+
+        </div>
+        
+        <div class="line_container">
+
+                <label for="password"><i class="fa-solid fa-key"></i>  Contraseña</label>
+                <input type="password" name="password"></input>
+
+        </div>
+        
+        <div class="line_container">
+
+                <button id="login_submit" type="submit">Ingresar</input>
+
+        </div>
+
+    </form>
+
+    {{#if error}}
+
+    <div class="line_container">
+        
+        <p>Al menos uno de los datos ingresados es incorrecto</p>
+        
+        </div>
+
+    {{/if}}
+
+</div>
