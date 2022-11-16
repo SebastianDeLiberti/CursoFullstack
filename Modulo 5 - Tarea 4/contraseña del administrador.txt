@@ -1,4 +1,0 @@
-usuario: sebastian
-contraseña: tecno123
-
-
