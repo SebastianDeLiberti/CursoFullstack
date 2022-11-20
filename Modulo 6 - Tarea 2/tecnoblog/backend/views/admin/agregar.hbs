@@ -1,0 +1,72 @@
+<div id="add_container">
+
+    <h2>Nuevo post</h2>
+
+    <form id="login_form" action="/admin/administracion/agregar" method="post">
+
+        <div class="line_container">
+
+                <label for="id_usuario">User Id</label>
+                <input type="text" name="id_usuario"></input>
+
+        </div>
+        
+        <div class="line_container">
+
+                <label for="fecha">Fecha</label>
+                <input type="text" name="fecha"></input>
+
+        </div>
+
+        <div class="line_container">
+
+                <label for="tipo">Tipo</label>
+                <select name="tipo">
+
+                    <option value="tutorial">Tutorial</option>
+                    <option value="noticia">Noticia</option>
+
+                </select>
+
+        </div>
+
+        <div class="line_container">
+
+                <label for="portada">Url Portada</label>
+                <input type="text" name="portada"></input>
+
+        </div>
+
+        <div class="line_container">
+
+            <label for="titulo">Título</label>
+            <textarea type="text" name="titulo"></textarea>
+        
+        </div>
+
+        <div class="line_container">
+
+            <label for="cuerpo">Cuerpo</label>
+            <textarea type="text" name="cuerpo"></textarea>
+        
+        </div>
+
+        <div class="line_container">
+
+                <button id="add_submit" type="submit">Agregar</input>
+
+        </div>
+
+    </form>
+
+    {{#if error}}
+
+        <div class="line_container">
+        
+            <p>{{message}}</p>
+        
+        </div>
+
+    {{/if}}
+
+ </div>

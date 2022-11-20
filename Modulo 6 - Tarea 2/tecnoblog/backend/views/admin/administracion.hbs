@@ -1,0 +1,82 @@
+<div id="admin_container">
+
+    <div id="user_welcome">
+
+        <h2 >Bienvenid@<span>{{persona}}</span></h2>
+       <a href="/admin/login/logout" id="logout_btn">Cerrar sesión <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+
+    </div>
+
+</div>
+
+<div class="table_top">
+
+    <div class="table_title">Posts</div>
+    <a class="table_new_button" href="/admin/administracion/agregar">Nuevo</a>
+
+</div>
+
+<table class="table">
+
+    <thead>
+
+        <tr>
+
+            <th>#</th>
+            <th>User Id</th>
+            <th>Fecha</th>
+            <th>Tipo</th>
+            <th>Portada</th>
+            <th>Título</th>
+            <th class="th_body">Cuerpo</th>
+            <th>Acciones</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        {{#each posts}}
+
+        <tr>
+        
+            <td>
+                <div class="td_content">{{id_post}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{id_usuario}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{fecha}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{tipo}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{portada}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{titulo}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{cuerpo}}</div>
+            </td>
+            <td>
+        
+                <div class="td_content">
+        
+                    <a href="/admin/administracion/modificar/{{id_post}}"><i class="fa fa-pencil"></i></a>
+                    <a href="/admin/administracion/eliminar/{{id_post}}"><i class="fa fa-trash"></i></a>
+        
+                </div>
+        
+            </td>
+        
+        </tr>
+
+        {{/each}}
+
+    </tbody>
+
+</table>
