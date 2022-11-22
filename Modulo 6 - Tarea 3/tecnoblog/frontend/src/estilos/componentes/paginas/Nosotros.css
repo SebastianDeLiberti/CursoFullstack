@@ -1,0 +1,102 @@
+.article_nosotros {
+
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+   
+}
+
+.article_nosotros .profile_wrapper {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.article_nosotros .profile_wrapper .user_picture {
+
+    width: 100%;
+
+}
+
+.article_nosotros .profile_wrapper .social_media {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.article_nosotros .profile_wrapper .social_media .link {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    margin: 5px 5px;
+
+}
+
+.article_nosotros .profile_wrapper .social_media img {
+
+    width: 100%;
+
+}
+
+.article_nosotros .profile_wrapper .social_media img:hover {
+
+    opacity: 0.7;
+    cursor: pointer;
+
+}
+
+.article_nosotros .text_wrapper {
+
+    width: 100%;
+
+}
+
+.article_nosotros .name {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 10px 0;
+
+}
+
+.article_nosotros .text {
+
+    max-height: 180px;
+    padding: 10px 15px;
+    margin: 20px 0 0 0;
+    word-wrap: break-word;
+    color: black;
+    overflow: scroll;
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .article_nosotros .profile_wrapper {
+    
+        width: 25%;
+    
+    }
+    
+    .article_nosotros .text_wrapper {
+    
+        width: 75%;
+    
+    }
+
+}

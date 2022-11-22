@@ -1,0 +1,67 @@
+<div id="add_container">
+
+    <h2>Nuevo perfil de usuario</h2>
+
+    <form id="login_form" action="/admin/administracion/agregarnosotros" method="post" enctype="multipart/form-data">
+
+        <div class="line_container">
+
+                <label for="id_usuario">User Id</label>
+                <input type="text" name="id_usuario"></input>
+
+        </div>
+
+        <div class="line_container">
+
+                <label for="foto_perfil">Foto</label>
+                <input type="file" name="foto_perfil"></input>
+
+        </div>
+
+        <div class="line_container">
+
+            <label for="texto">Texto</label>
+            <textarea type="text" name="texto"></textarea>
+        
+        </div>
+        
+        <div class="line_container">
+
+                <label for="sm_face">Facebook</label>
+                <input type="text" name="sm_face"></input>
+
+        </div>
+
+        <div class="line_container">
+
+                <label for="sm_twit">Twitter</label>
+                <input type="text" name="sm_twit"></input>
+
+        </div>
+
+        <div class="line_container">
+
+                <label for="sm_inst">Instagram</label>
+                <input type="text" name="sm_inst"></input>
+
+        </div>
+
+        <div class="line_container">
+
+                <button id="add_submit" type="submit">Agregar</input>
+
+        </div>
+
+    </form>
+
+    {{#if error}}
+
+        <div class="line_container">
+        
+            <p>{{message}}</p>
+        
+        </div>
+
+    {{/if}}
+
+ </div>
