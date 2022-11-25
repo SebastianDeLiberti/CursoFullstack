@@ -1,0 +1,234 @@
+<div id="admin_container">
+
+    <div id="user_welcome">
+
+        <h2 >Bienvenid@<span>{{persona}}</span></h2>
+       <a href="/admin/login/logout" id="logout_btn">Cerrar sesión <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+
+    </div>
+
+</div>
+
+{{! ////////////////////// POSTS /////////////////////// }}
+
+<div class="table_top">
+
+    <div class="table_title">Posts</div>
+    <a class="table_new_button" href="/admin/administracion/agregar">Nuevo</a>
+
+</div>
+
+<table class="table">
+
+    <thead>
+
+        <tr>
+
+            <th>#</th>
+            <th>User Id</th>
+            <th>Nombre</th>
+            <th>Foto</th>
+            <th>Fecha</th>
+            <th>Tipo</th>
+            <th>Portada</th>
+            <th>Título</th>
+            <th class="th_body">Cuerpo</th>
+            <th>Acciones</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        {{#each posts}}
+
+        <tr>
+        
+            <td>
+                <div class="td_content">{{id_post}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{id_usuario}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{nombre_usuario}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{{foto_usuario}}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{fecha}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{tipo}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{{portada}}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{titulo}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{cuerpo}}</div>
+            </td>
+            <td>
+        
+                <div class="td_content">
+        
+                    <a href="/admin/administracion/modificar/{{id_post}}"><i class="fa fa-pencil"></i></a>
+                    <a href="/admin/administracion/eliminar/{{id_post}}"><i class="fa fa-trash"></i></a>
+        
+                </div>
+        
+            </td>
+        
+        </tr>
+
+        {{/each}}
+
+    </tbody>
+
+</table>
+
+{{! ////////////////////// NOSOTROS /////////////////////// }}
+
+<div class="table_top">
+
+    <div class="table_title">Nosotros</div>
+    <a class="table_new_button" href="/admin/administracion/agregarnosotros">Nuevo</a>
+
+</div>
+
+<table class="table">
+
+    <thead>
+
+        <tr>
+
+            <th>#</th>
+            <th>User Id</th>
+            <th>Nombre</th>
+            <th>Foto</th>
+            <th class="th_body">Texto</th>
+            <th>Facebook</th>
+            <th>Twitter</th>
+            <th>Instagram</th>
+            <th>Acciones</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        {{#each nosotros}}
+
+        <tr>
+        
+            <td>
+                <div class="td_content">{{id_nosotros}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{id_usuario}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{nombre_usuario}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{{foto_perfil}}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{texto}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{sm_face}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{sm_twit}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{sm_inst}}</div>
+            </td>
+           
+            <td>
+     
+                <div class="td_content">
+        
+                    <a href="/admin/administracion/modificarnosotros/{{id_nosotros}}"><i class="fa fa-pencil"></i></a>
+                    <a href="/admin/administracion/eliminarnosotros/{{id_nosotros}}"><i class="fa fa-trash"></i></a>
+        
+                </div>
+
+            </td>
+  
+        </tr>
+
+        {{/each}}
+
+    </tbody>
+
+</table>
+
+{{! ////////////////////// ENLACES /////////////////////// }}
+
+<div class="table_top">
+
+    <div class="table_title">Enlaces</div>
+    <a class="table_new_button" href="/admin/administracion/agregarenlaces">Nuevo</a>
+
+</div>
+
+<table class="table">
+
+    <thead>
+
+        <tr>
+
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Enlace</th>
+            <th class="th_body">Descripción</th>
+            <th>Acciones</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        {{#each enlaces}}
+
+        <tr>
+        
+            <td>
+                <div class="td_content">{{id_enlace}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{nombre}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{enlace}}</div>
+            </td>
+            <td>
+                <div class="td_content">{{descripcion}}</div>
+            </td>
+ 
+            <td>
+    
+                <div class="td_content">
+        
+                    <a href="/admin/administracion/modificarenlaces/{{id_enlace}}"><i class="fa fa-pencil"></i></a>
+                    <a href="/admin/administracion/eliminarenlaces/{{id_enlace}}"><i class="fa fa-trash"></i></a>
+        
+                </div>
+
+            </td>
+   
+        </tr>
+
+        {{/each}}
+
+    </tbody>
+
+</table>
