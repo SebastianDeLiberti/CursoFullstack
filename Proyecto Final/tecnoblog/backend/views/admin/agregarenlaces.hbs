@@ -1,0 +1,46 @@
+<div id="add_container">
+
+    <h2>Nuevo enlace</h2>
+
+    <form id="login_form" action="/admin/administracion/agregarenlaces" method="post">
+
+        <div class="line_container">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre"></input>
+
+        </div>
+        
+        <div class="line_container">
+
+                <label for="enlace">Enlace</label>
+                <input type="text" name="enlace"></input>
+
+        </div>
+
+        <div class="line_container">
+
+            <label for="descripcion">Descripción</label>
+            <textarea type="text" name="descripcion"></textarea>
+        
+        </div>
+
+        <div class="line_container">
+
+                <button id="add_submit" type="submit">Agregar</input>
+
+        </div>
+
+    </form>
+
+    {{#if error}}
+
+        <div class="line_container">
+        
+            <p>{{message}}</p>
+        
+        </div>
+
+    {{/if}}
+
+ </div>

@@ -1,0 +1,77 @@
+<div id="add_container">
+
+    <h2>Modificar perfil de usuario</h2>
+
+    <form id="login_form" action="/admin/administracion/modificarnosotros" method="post" enctype="multipart/form-data">
+
+        <input type="hidden" name="id_nosotros" value="{{nosotros_row.id_nosotros}}"></input>
+        <input type="hidden" name="foto_perfil_original" value="{{nosotros_row.foto_perfil}}"></input>
+
+        <div class="line_container">
+
+                <label for="id_usuario">User Id</label>
+                <input type="text" name="id_usuario" value="{{nosotros_row.id_usuario}}"></input>
+
+        </div>
+
+        <div class="line_container">
+
+                <label for="foto_perfil">Foto</label>
+                <input type="file" name="foto_perfil"></input>
+
+        </div>
+
+        <div class="line_container">
+
+            <label for="texto">Texto</label>
+            <textarea type="text" name="texto">{{nosotros_row.texto}}</textarea>
+        
+        </div>
+        
+        <div class="line_container">
+
+                <label for="sm_face">Facebook</label>
+                <input type="text" name="sm_face" value="{{nosotros_row.sm_face}}"></input>
+
+        </div>
+
+        <div class="line_container">
+
+                <label for="sm_twit">Twitter</label>
+                <input type="text" name="sm_twit" value="{{nosotros_row.sm_twit}}"></input>
+
+        </div>
+
+        <div class="line_container">
+
+                <label for="sm_inst">Instagram</label>
+                <input type="text" name="sm_inst" value="{{nosotros_row.sm_inst}}"></input>
+
+        </div>
+
+        <div class="line_container">
+
+            <label for="borrar_foto_perfil">Eliminar foto de perfil actual?</label>
+            <input type="checkbox" name="borrar_foto_perfil" value="1"></input>
+        
+        </div>
+
+        <div class="line_container">
+
+                <button id="add_submit" type="submit">Modificar</input>
+
+        </div>
+
+    </form>
+
+    {{#if error}}
+
+        <div class="line_container">
+        
+            <p>{{message}}</p>
+        
+        </div>
+
+    {{/if}}
+
+ </div>

@@ -1,0 +1,39 @@
+/************************* FONTS ***************************/
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+*/
+
+/***********************************************************/
+
+/************************* ESTILOS GENERALES ***************************/
+
+
+body {
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #e9e8e0;
+
+}
+
+main #main_content {
+
+  padding: 0 15px;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: gray;
+  background-color: white;
+
+}
+
+.wrapper {
+
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+}
+
